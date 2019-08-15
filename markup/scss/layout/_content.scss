@@ -200,12 +200,15 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__item {
+    &__contant-holder {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         min-height: 150px;
+    }
+    &__item {
+       display: flex;
         @include media ('>=desktop') {
             width: 25%;
         }

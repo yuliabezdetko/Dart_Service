@@ -1017,7 +1017,7 @@ input[type='submit'] {
       -ms-flex-align: center;
           align-items: center; }
 
-.advantages-holder__item {
+.advantages-holder__contant-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,6 +1029,11 @@ input[type='submit'] {
           justify-content: center;
   width: 100%;
   min-height: 150px; }
+
+.advantages-holder__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media (min-width: 1024px) {
     .advantages-holder__item {
       width: 25%; } }
