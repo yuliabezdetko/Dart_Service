@@ -1,0 +1,94 @@
+// forms
+form,
+fieldset {
+	max-width: 604px;
+	margin: 0 auto;
+	padding: 0;
+	border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'] {
+	min-width: 280px;
+	min-height: 50px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	border: 1px solid #061e37;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 0 0 10px;
+	&:last-child {
+		margin: 0;
+	}
+	@include media ('>=tablet') {
+		margin: 0 40px 0 0;
+	}
+	@include media ('>=desktop') {
+		margin: 0 40px 0 0;
+		min-width: 280px;
+		min-height: 50px;
+	}
+	
+	
+	// &:hover {
+		
+		// }
+		
+		&:focus {
+			border-color: $form-element-focus-border-color;
+		}
+		
+		@include placeholder {
+			color: #061e37;
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+	
+	input[type='checkbox'] {
+		margin: 0;
+		border: 1px solid #061e37;
+		@include media ('>=desktop') {
+			margin: 0 10px 0 0;
+		}
+	}
+	
+	select {
+		-webkit-border-radius: 0;
+	}
+	
+	textarea {
+		resize: vertical;
+		vertical-align: top;
+		min-width: 300px;
+		min-height: 150px;
+		border: 1px solid #061e37;
+		border-radius: 5px;
+		padding: 15px;
+		margin: 0 0 20px;
+		@include media ('>=tablet') {
+			min-width: 600px;
+			min-height: 150px;
+		}
+		@include placeholder {
+			color: #061e37;
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+	
+	button,
+	input[type='button'],
+	input[type='reset'],
+	input[type='file'],
+	input[type='submit'] {
+		cursor: pointer;
+		border: none;
+		background-color: #1de9b6;
+		min-width: 130px;
+	}
+	
